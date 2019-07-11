@@ -2,8 +2,8 @@
  close all;
  
  n=[0 1 0 1 1 0 1];
-     xx = input('Input Voltage Level: ');
- f=1;
+     %xx = input('Input Voltage Level: ');
+ f=1;xx=2;
  for m=1:length(n);
    if n(m)==1
        nn(m)=1*xx;
@@ -23,11 +23,12 @@
      endif
  endfor
  
- plot(t,y,'k');
+ plot(t,y,'b');
  axis([0 length(n) -(xx+2) (xx+2)]);
  title('NRZ bipolar ');
  xlabel('Time');
  ylabel('Amplitude');
+ grid on;
  
  
  
